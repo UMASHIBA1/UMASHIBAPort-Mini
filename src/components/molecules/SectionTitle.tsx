@@ -7,7 +7,7 @@ interface Props {
 
 const SectionTitle: React.FC<Props> = ({ text }: Props) => {
   return (
-    <div className="flex items-center h-full justify-center">
+    <div className="flex items-center h-full justify-start pl-2">
       <H1 text={text} />
     </div>
   );
