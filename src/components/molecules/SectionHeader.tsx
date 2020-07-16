@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 
 interface Props {
   title: string;
-  colorName: string;
+  colorClassName: string;
 }
 
 const Line: React.FC = () => {
@@ -19,7 +19,10 @@ const LineWrapper: React.FC = () => {
   );
 };
 
-const SectionHeader: React.FC<Props> = ({ title, colorName }: Props) => {
+const SectionHeader: React.FC<Props> = ({
+  title,
+  colorClassName: colorName,
+}: Props) => {
   return (
     <div className="w-full p-2 h-32">
       <div
