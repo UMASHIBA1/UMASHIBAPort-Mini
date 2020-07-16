@@ -3,9 +3,12 @@ import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 import "./styles/tailwind.compiled.css";
 import "./styles/global.css";
+import Home from "./components/pages/Home";
 
 ReactDOM.render(
-  <React.StrictMode></React.StrictMode>,
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
