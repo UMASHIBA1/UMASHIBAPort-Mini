@@ -3,6 +3,7 @@ import ContentData from "../../typings/CotentData";
 import SectionContentCell from "../atomics/SectionContentCell";
 import Modal from "./Modal";
 import H1 from "../atomics/H1";
+import Button from "../atomics/Button";
 
 interface Props {
   contentDatas?: ContentData[];
@@ -26,6 +27,11 @@ const OneContent: React.FC<OneContentProps> = ({
         >
           <H1 text={title} />
           <div className="p-2">{description}</div>
+          {link !== undefined ? (
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <Button text="見てみる" />
+            </a>
+          ) : null}
         </div>
       </Modal>
       <SectionContentCell onClickFC={() => changeIsDisable(false)}>
