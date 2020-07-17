@@ -11,7 +11,11 @@ const SectionContent: React.FC<Props> = ({ contentDatas }: Props) => {
     <div className="w-full h-full flex justify-start flex-row flex-wrap pt-2">
       {contentDatas !== undefined
         ? contentDatas.map((content) => {
-            return <SectionContentCell>{content.title}</SectionContentCell>;
+            return (
+              <SectionContentCell>
+                <div className="break-words">{content.title}</div>
+              </SectionContentCell>
+            );
           })
         : null}
     </div>
