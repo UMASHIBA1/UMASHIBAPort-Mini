@@ -21,7 +21,8 @@ const worksData: ContentData[] = [
   },
   {
     title: "UMASHIBAPort2",
-    description: "このサイトです。CSSアニメーションを重視して作成しました。",
+    description:
+      "完全版のポートフォリオです。CSSアニメーションを重視して作成しました。",
 
     link: "https://umashiba.dev/",
   },
@@ -41,6 +42,12 @@ const worksData: ContentData[] = [
     description:
       "勉強の為に仮想DOMを実装してみました。これを自作することで今まで使っていたReact等のフロントエンドフレームワークへの理解を深めることができました。",
     link: "https://github.com/UMASHIBA1/UMASHIBAVirtualDOM",
+  },
+  {
+    title: "UMASHIBAPort-Mini",
+    description:
+      "このサイトです。学校の課題で作りました。面接で技術とか説明する用にもうちょっとシンプルなポートフォリオが欲しかったのでシンプルなデザインにしました。",
+    link: "https://umashiba-port-mini.vercel.app/",
   },
 ];
 
