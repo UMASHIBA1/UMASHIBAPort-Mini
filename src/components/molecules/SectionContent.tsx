@@ -26,7 +26,7 @@ const OneContent: React.FC<OneContentProps> = ({
       <Modal isDisable={isDisable} onClickBG={() => changeIsDisable(true)}>
         <div
           className="p-2 m-2"
-          style={{ maxWidth: "90vw", minWidth: "20rem" }}
+          style={{ maxWidth: "50rem", minWidth: "20rem" }}
         >
           <H1 text={title} />
           <div className="p-2">{description}</div>
