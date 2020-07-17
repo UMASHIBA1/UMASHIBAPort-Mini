@@ -7,14 +7,17 @@ import Button from "../atomics/Button";
 
 interface Props {
   contentDatas?: ContentData[];
+  colorClassName?: string;
 }
 
 interface OneContentProps {
   content: ContentData;
+  colorClassName?: string;
 }
 
 const OneContent: React.FC<OneContentProps> = ({
   content,
+  colorClassName,
 }: OneContentProps) => {
   const { title, description, link } = content;
   const [isDisable, changeIsDisable] = useState(true);
@@ -29,7 +32,7 @@ const OneContent: React.FC<OneContentProps> = ({
           <div className="p-2">{description}</div>
           {link !== undefined ? (
             <a href={link} target="_blank" rel="noopener noreferrer">
-              <Button text="見てみる" />
+              <Button colorClassName={colorClassName} text="見てみる" />
             </a>
           ) : null}
         </div>
@@ -41,13 +44,17 @@ const OneContent: React.FC<OneContentProps> = ({
   );
 };
 
-const SectionContent: React.FC<Props> = ({ contentDatas }: Props) => {
+const SectionContent: React.FC<Props> = ({
+  contentDatas,
+  colorClassName,
+}: Props) => {
   return (
     <div className="w-full h-full flex justify-start flex-row flex-wrap pt-2">
       {contentDatas !== undefined
         ? contentDatas.map((content) => {
             return (
               <OneContent
+                colorClassName={colorClassName}
                 key={content.title + content.description}
                 content={content}
               />

@@ -17,7 +17,10 @@ const Section: React.FC<Props> = ({
   return (
     <section className="w-full h-auto flex flex-col justify-center p-2">
       <SectionHeader title={title} colorClassName={colorClassName} />
-      <SectionContent contentDatas={contentDatas} />
+      <SectionContent
+        contentDatas={contentDatas}
+        colorClassName={colorClassName}
+      />
     </section>
   );
 };
