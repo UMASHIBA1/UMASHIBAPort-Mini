@@ -46,7 +46,12 @@ const SectionContent: React.FC<Props> = ({ contentDatas }: Props) => {
     <div className="w-full h-full flex justify-start flex-row flex-wrap pt-2">
       {contentDatas !== undefined
         ? contentDatas.map((content) => {
-            return <OneContent content={content} />;
+            return (
+              <OneContent
+                key={content.title + content.description}
+                content={content}
+              />
+            );
           })
         : null}
     </div>
