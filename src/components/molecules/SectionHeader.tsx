@@ -26,7 +26,7 @@ const SectionHeader: React.FC<Props> = ({
   return (
     <div className="w-full h-32">
       <div
-        className={`flex flex-row w-full h-full shadow-2xl relative rounded-md bg-${colorName} overflow-hidden`}
+        className={`flex flex-row w-full h-full shadow-md relative rounded-md bg-${colorName} overflow-hidden`}
       >
         <SectionTitle text={title} />
         <LineWrapper />
