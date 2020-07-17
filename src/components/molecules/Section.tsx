@@ -15,7 +15,7 @@ const Section: React.FC<Props> = ({
   contentDatas,
 }: Props) => {
   return (
-    <section className="w-full h-full flex flex-col justify-center p-2">
+    <section className="w-full h-auto flex flex-col justify-center p-2">
       <SectionHeader title={title} colorClassName={colorClassName} />
       <SectionContent contentDatas={contentDatas} />
     </section>
