@@ -11,9 +11,7 @@ const Modal: React.FC<Props> = (props: Props) => {
   return (
     <Overlay isDisable={props.isDisable} onClick={props.onClickBG}>
       <div className="flex justify-center items-center">
-        <div className="bg-gray-200 rounded-md m-4 md:w-9/12">
-          {props.children}
-        </div>
+        <div className="bg-gray-200 rounded-md">{props.children}</div>
       </div>
     </Overlay>
   );
