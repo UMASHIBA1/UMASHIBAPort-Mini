@@ -29,7 +29,7 @@ const OneContent: React.FC<OneContentProps> = ({
           style={{ maxWidth: "50rem", minWidth: "20rem" }}
         >
           <H1 text={title} />
-          <div className="p-2">{description}</div>
+          <div className="py-2">{description}</div>
           {link !== undefined ? (
             <a href={link} target="_blank" rel="noopener noreferrer">
               <Button colorClassName={colorClassName} text="見てみる" />
